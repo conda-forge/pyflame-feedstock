@@ -12,7 +12,8 @@ source:
 
 build:
   number: 1000
-  skip: true  # [not linux or py37]
+  skip: true  # [not linux]
+  skip: true  # [py>=37]
 
 requirements:
   build:

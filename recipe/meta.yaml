@@ -12,7 +12,7 @@ source:
 
 build:
   number: 1000
-  skip: true  # [not linux]
+  skip: true  # [not linux or py37]
 
 requirements:
   build:
@@ -23,10 +23,10 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python <3.7
+    - python
 
   run:
-    - python <3.7
+    - python
 
 test:
   commands:

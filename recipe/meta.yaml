@@ -1,6 +1,6 @@
 {% set name = "pyflame" %}
-{% set version = "1.5.2" %}
-{% set checksum = "d56f3c8a4cff5864126b9349440423027d67ec918c8b134c932a90bbc70cc923" %}
+{% set version = "1.5.7" %}
+{% set checksum = "fb6f5722cecd53873e89165d696433b6bf51b9bf8318c1a57ff9aebbdf71e48b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ checksum }}
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [not linux]
   skip: true  # [py>36]
 

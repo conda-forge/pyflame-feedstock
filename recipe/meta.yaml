@@ -11,7 +11,7 @@ source:
   sha256: {{ checksum }}
 
 build:
-  number: 1002
+  number: 1003
   skip: true  # [not linux]
   skip: true  # [py>36]
 
@@ -22,6 +22,7 @@ requirements:
     - libtool
     - pkg-config
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
